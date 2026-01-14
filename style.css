@@ -1,26 +1,32 @@
-/* Custom Batik & UI Theme */
+/* Warna Tema Jawa */
 :root {
-    --keraton-brown: #4a2c2a;
-    --gold-accent: #d4af37;
-    --parang-white: #fcfaf2;
+    --cokelat-tua: #4a2c2a;
+    --emas: #d4af37;
+    --krem-batik: #fcfaf2;
 }
 
 body {
-    background-color: var(--parang-white);
-    background-image: url('https://www.transparenttextures.com/patterns/batik.png'); /* Pola batik halus */
+    background-color: var(--krem-batik);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--cokelat-tua);
 }
 
-.card-budaya {
-    transition: all 0.3s ease;
-    border-left: 5px solid var(--keraton-brown);
+/* Kartu Budaya */
+.card-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    border: 1px solid #eee;
 }
 
-.card-budaya:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.btn-main {
-    background: linear-gradient(135deg, var(--keraton-brown), #72413e);
+.badge {
+    background: var(--emas);
     color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
